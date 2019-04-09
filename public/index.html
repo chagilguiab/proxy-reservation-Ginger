@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Opentable</title>
+  </head>
+  <body>
+    <div id="app"></div>
+    <div id="app"></div>
+    <div id="app"></div>
+    <div id="app"></div>
+    <script src="/lib/react.development.js"></script>
+    <script src="/lib/react-dom.development.js"></script>
+    <script src="http://localhost:3001/bundle.js"></script>
+    <script src="http://localhost:3002/bundle.js"></script>
+    <script src="http://localhost:3003/bundle.js"></script>
+    <script src="http://localhost:3004/bundle.js"></script>
+
+    <!-- see: https://reactjs.org/docs/react-without-jsx.html -->
+    <script>
+      const e = React.createElement;
+      const id = {id: window.location.pathname.split('/')[0]};
+      ReactDOM.render(
+        e(App, id),
+        document.getElementById('app')
+      );
+      ReactDOM.render(
+        e(App),
+        document.getElementById('app')
+      );
+      ReactDOM.render(
+        e(App),
+        document.getElementById('app')
+      );
+      ReactDOM.render(
+        e(Menu),
+        document.getElementById('menu')
+      );
+    </script>
+  </body>
+</html>
