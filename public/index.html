@@ -3,13 +3,22 @@
   <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Josefin Sans">
+    <link rel="stylesheet" type="text/css" href="style1.css">
+    <link rel="stylesheet" type="text/css" href="style2.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/solid.css" integrity="sha384-QokYePQSOwpBDuhlHOsX0ymF6R/vLk/UQVz3WHa6wygxI5oGTmDTv8wahFOSspdm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/fontawesome.css" integrity="sha384-vd1e11sR28tEK9YANUtpIOdjGW14pS87bUBuOIoBILVWLFnS+MCX9T6MMf0VdPGq" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style3.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="styles.css">
     <title>Opentable</title>
   </head>
   <body>
-    <div id="app"></div>
-    <div id="app"></div>
-    <div id="app"></div>
-    <div id="app"></div>
+    <div id="reservation"></div>
+    <div id="app-reviews"></div>
+    <div id="app-overview"></div>
+    <div id="menu"></div>
     <script src="/lib/react.development.js"></script>
     <script src="/lib/react-dom.development.js"></script>
     <script src="http://localhost:3001/bundle.js"></script>
@@ -17,20 +26,21 @@
     <script src="http://localhost:3003/bundle.js"></script>
     <script src="http://localhost:3004/bundle.js"></script>
 
+
     <!-- see: https://reactjs.org/docs/react-without-jsx.html -->
     <script>
       const e = React.createElement;
       ReactDOM.render(
-        e(App),
-        document.getElementById('app')
+        e(Reservation),
+        document.getElementById('reservation')
       );
       ReactDOM.render(
         e(App),
-        document.getElementById('app')
+        document.getElementById('app-reviews')
       );
       ReactDOM.render(
-        e(App),
-        document.getElementById('app')
+        e(Overview),
+        document.getElementById('app-overview')
       );
       ReactDOM.render(
         e(Menu),

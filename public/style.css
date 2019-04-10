@@ -1,0 +1,23 @@
+
+.body {
+  display: grid;
+  grid-template-rows: 20% 20% 20% 20% 20%;
+}
+
+.reservation {
+  grid-row-start: 1
+}
+
+.app-overview {
+  grid-row-start: 2
+}
+
+.menu {
+  grid-row-start: 3
+}
+
+.app-reviews {
+  grid-row-start: 4
+}
+
+
