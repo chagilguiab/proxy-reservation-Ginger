@@ -9,10 +9,6 @@
     <link rel="stylesheet" type="text/css" href="styles-review_summary.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/solid.css" integrity="sha384-QokYePQSOwpBDuhlHOsX0ymF6R/vLk/UQVz3WHa6wygxI5oGTmDTv8wahFOSspdm" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/fontawesome.css" integrity="sha384-vd1e11sR28tEK9YANUtpIOdjGW14pS87bUBuOIoBILVWLFnS+MCX9T6MMf0VdPGq" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="styles-overview.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="styles-menu.css">
     <title>Opentable</title>
   </head>
   <body>
@@ -27,24 +23,22 @@
     <script src="http://localhost:3003/bundle.js"></script>
     <script src="http://localhost:3004/bundle.js"></script>
 
-
     <!-- see: https://reactjs.org/docs/react-without-jsx.html -->
     <script>
-      const e = React.createElement;
       ReactDOM.render(
-        e(Reservation),
+        React.createElement(Reservation),
         document.getElementById('reservation')
       );
       ReactDOM.render(
-        e(App),
+        React.createElement(App),
         document.getElementById('app-reviews')
       );
       ReactDOM.render(
-        e(Overview),
+        React.createElement(Overview),
         document.getElementById('app-overview')
       );
       ReactDOM.render(
-        e(Menu),
+        React.createElement(Menu),
         document.getElementById('menu')
       );
     </script>

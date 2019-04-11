@@ -16,6 +16,7 @@
     "react-dom": "^16.8.6"
   },
   "devDependencies": {
-    "eslint-config-hackreactor": "git://github.com/reactorcore/eslint-config-hackreactor"
+    "eslint-config-hackreactor": "git://github.com/reactorcore/eslint-config-hackreactor",
+    "http-proxy-middleware": "^0.19.1"
   }
 }
