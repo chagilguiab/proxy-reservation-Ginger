@@ -7,7 +7,7 @@
   width: 570px;
 }
 #menu {
- margin-top: 100px;
+ margin-top: 50px;
  margin-left: 210px;
 }
 
@@ -18,7 +18,7 @@
 #reservation {
     width: 350px;
     position:fixed;
-    margin-top: 166px;
+    margin-top: 180px;
     margin-right: 210px;
     top:0;
     right:0;
