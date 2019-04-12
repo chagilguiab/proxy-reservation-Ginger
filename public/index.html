@@ -4,18 +4,14 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Josefin Sans">
-    <link rel="stylesheet" type="text/css" href="styles-reservation.css">
-    <link rel="stylesheet" type="text/css" href="styles-reviews.css">
-    <link rel="stylesheet" type="text/css" href="styles-review_summary.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/solid.css" integrity="sha384-QokYePQSOwpBDuhlHOsX0ymF6R/vLk/UQVz3WHa6wygxI5oGTmDTv8wahFOSspdm" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/fontawesome.css" integrity="sha384-vd1e11sR28tEK9YANUtpIOdjGW14pS87bUBuOIoBILVWLFnS+MCX9T6MMf0VdPGq" crossorigin="anonymous">
     <title>Opentable</title>
   </head>
   <body>
-    <div id="reservation"></div>
-    <div id="app-reviews"></div>
     <div id="app-overview"></div>
+    <div id="reservation"></div>
     <div id="menu"></div>
+    <div id="app-reviews"></div>
+
     <script src="/lib/react.development.js"></script>
     <script src="/lib/react-dom.development.js"></script>
     <script src="http://localhost:3001/bundle.js"></script>
@@ -24,23 +20,6 @@
     <script src="http://localhost:3004/bundle.js"></script>
 
     <!-- see: https://reactjs.org/docs/react-without-jsx.html -->
-    <script>
-      ReactDOM.render(
-        React.createElement(Reservation),
-        document.getElementById('reservation')
-      );
-      ReactDOM.render(
-        React.createElement(App),
-        document.getElementById('app-reviews')
-      );
-      ReactDOM.render(
-        React.createElement(Overview),
-        document.getElementById('app-overview')
-      );
-      ReactDOM.render(
-        React.createElement(Menu),
-        document.getElementById('menu')
-      );
-    </script>
+
   </body>
 </html>

@@ -1,23 +1,30 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin Sans');
 
-.body {
-  display: grid;
-  grid-template-rows: 20% 20% 20% 20% 20%;
+#app-reviews {
+  margin-top: 30px;
+  margin-right: 450px;
+  margin-left: 210px;
+  width: 570px;
+}
+#menu {
+ margin-top: 100px;
+ margin-left: 210px;
 }
 
-.reservation {
-  grid-row-start: 1
+#app-overview {
+  width: 608px;
 }
 
-.app-overview {
-  grid-row-start: 2
+#reservation {
+    width: 350px;
+    position:fixed;
+    margin-top: 166px;
+    margin-right: 210px;
+    top:0;
+    right:0;
 }
 
-.menu {
-  grid-row-start: 3
+.image_1swebtw-o_O-imageLoaded_zgbg08 {
+  height: 350px;
+  width: 600px;
 }
-
-.app-reviews {
-  grid-row-start: 4
-}
-
-
