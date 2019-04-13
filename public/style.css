@@ -1,18 +1,18 @@
 @import url('https://fonts.googleapis.com/css?family=Josefin Sans');
 
 #app-reviews {
-  margin-top: 30px;
-  margin-right: 450px;
-  margin-left: 210px;
-  width: 570px;
+  margin-left: 220px;
+ 	max-width: 608px;
+ 	margin-top: 50px;
 }
 #menu {
  margin-top: 50px;
- margin-left: 210px;
+ margin-left: 220px;
 }
 
 #app-overview {
   width: 608px;
+  margin-left: 220px;
 }
 
 #reservation {
