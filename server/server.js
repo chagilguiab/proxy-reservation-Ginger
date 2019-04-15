@@ -29,5 +29,12 @@ app.listen(port, () => {
   console.log(`server running at: http://localhost:${port}`);
 });
 
+//NOTES:
+//I was only able to get data for reservation service if I use above proxy middlevare.
+//Proxy has extra '/' in url at the end. In order to grab the correct id I changed reviews and overview services's id method to this:  "window.location.href.split('/')[3]" in front end(in each component).
+//I was not able to get data for overview service. To achieve getting data for id's I changed url to be fetched to this: `http://localhost:3003/restaurants/${this.state.urlID}`
+//Also reviews service has password for database. It should be removed or password should be provided.
+//In order to get data for menu service meke sure mongo running.
+
 
 
