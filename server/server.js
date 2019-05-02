@@ -21,9 +21,8 @@ app.use('/:id', express.static(path.join(__dirname, '/../public')));
 app.use('/:id', proxy({ target: 'http://localhost:3001', changeOrigin: true }));
 app.use('/ratings_ambience/:id', proxy({ target: 'http://localhost:3002', changeOrigin: true }));
 app.use('/reviews/:id', proxy({ target: 'http://localhost:3002', changeOrigin: true }));
-app.use('/restaurants/:id', proxy({ target: 'http://localhost:3003', changeOrigin: true }));
+app.use('/restaurants/:id', proxy({ target: 'http://ec2-18-144-6-231.us-west-1.compute.amazonaws.com:3003', changeOrigin: true }));
 app.use('/menus/:id', proxy({ target: 'http://localhost:3004', changeOrigin: true }));
-
 
 app.listen(port, () => {
   console.log(`server running at: http://localhost:${port}`);
